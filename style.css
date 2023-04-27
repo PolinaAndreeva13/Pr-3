@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.head{
+    text-align: center;
+    color: #f9f4e8;
+    background-color: #1f3c5c;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+.clotchFoCat{
+    color: #314c6f;
+    font-family: 'Times New Roman', Times, serif ;
+    font: bold;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.nameOfCloth{
+    color: #f9f4e8;
+    font-family: 'Times New Roman', Times, serif ;
+    font: bold;
+    text-align: center;
+    font-size: 17px;
+    text-shadow: 1px 1px 1px #314c6f;
+}
+
+.img1{
+    border: 4px solid  #1f3c5c;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.img2{
+    border: 4px solid  #1f3c5c;
+    border-radius: 8px;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+.forDivImg{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
