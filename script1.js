@@ -1,18 +1,17 @@
-var endSum = 0;
-var endCount = 0;
-let arr = [];
-const display =  document.getElementById("price_");
-if(localStorage.getItem('endSum') != null){
-    display.innerHTML += Number(localStorage.getItem('endSum')) + " капибарных рублей"; 
+let endSum = 0, endCount = 0, arr = [];
+const display = document.getElementById("price_");
+
+if (localStorage.getItem('endSum') != null) {
+    display.innerHTML += Number(localStorage.getItem('endSum')) + " капибарных рублей";
 }
-else{
-    display.innerHTML += 0 + " капибарных рублей"; 
+else {
+    display.innerHTML += 0 + " капибарных рублей";
 }
 
-function Price(numPrice, count, name, numberOfClotch){
-    let basket,res = [0,0], sum, sumCount;
+function Price(numPrice, count, name) {
+    let basket, res = [0, 0], sum, sumCount;
 
-    if (localStorage.getItem(name) != null){
+    if (localStorage.getItem(name) != null) {
         basket = localStorage.getItem(name);
         res = JSON.parse(basket);
     }
@@ -30,7 +29,7 @@ function Price(numPrice, count, name, numberOfClotch){
     endCount += count;
 
     display.innerHTML = ''
-    display.innerHTML += endSum + " капибарных рублей";  
+    display.innerHTML += endSum + " капибарных рублей";
 
     arr = [];
     arr[0] = sumCount;
