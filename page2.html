@@ -4,11 +4,28 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <title>Корзина</title>
 </head>
 
 <body bgcolor="#6384a2">
-    <script src="script2.js"></script>
-    <p id="1">79</p>
+    <div>
+        <script src="script2.js"></script>
+        <div class="head">
+            <p style="min-width: 1400px;">Ваша корзина:</p>
+        </div>
+        <div class="forDivTwoHTML">
+            <p class="nameOfCloth" style="margin-right: 30px; font-size: 25px;">Наименование товара </p>
+            <p class="nameOfCloth" style="margin-right: 100px; margin-left: 100px;font-size: 25px;">Количество товара
+            </p>
+            <p class="nameOfCloth" style="margin-right: 30px; font-size: 25px;">Итоговая цена по товару </p>
+        </div>
+        <div style="text-align: right; display: flex; justify-content: flex-end;">
+            <button class="forBtnTwoHTML">Оплатить</button>
+        </div>
+        <div style="text-align: left; display: flex;" onclick="Clear()">
+            <button class="forBtnTwoHTML2">Очистить корзину</button>
+        </div>
+    </div>
 </body>
 
 </html>

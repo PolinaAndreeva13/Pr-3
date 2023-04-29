@@ -31,6 +31,12 @@
     text-shadow: 1px 1px 1px #314c6f;
 }
 
+.nameOfClothBasket{
+    color: #f9f4e8;
+    font-family: 'Times New Roman', Times, serif ;
+    font-size: 20px;
+}
+
 .img1{
     border: 4px solid  #1f3c5c;
     border-radius: 8px;
@@ -61,6 +67,7 @@ button{
     border-radius: 8px;
     font-size: 22px;
     text-align: center;
+    transition: 0.3s ease all;
 }
 
 .divBtn1{
@@ -72,6 +79,7 @@ button:hover{
     color: #1f3c5c;
     background-color: #f4ebde;
     border: 7px solid  #f4ebde;
+    transform: scale(1.03);
 }
 
 .divBtn2{
@@ -83,10 +91,12 @@ button:hover{
     margin-left: 1470px;
     object-fit: cover;
     position: absolute;
+    transition: 0.3s ease all;
 }
 
 .img4:hover{
     background-color: #1f3c5c;
+    transform: scale(1.03);
 }
 
 .divBtn5{
@@ -106,4 +116,51 @@ button:hover{
     margin-top: 10px;
     object-fit: cover;
     position: absolute;
+}
+
+.forDivTwoHTML{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-left: 300px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.forBtnTwoHTML{
+    margin-left: auto;
+    position: absolute;
+    margin-right: 40px;
+    bottom: 0;
+    margin-bottom: 40px;
+}
+
+.forBtnTwoHTML2{
+    margin-right: auto;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 40px;
+    margin-left: 40px;
+}
+
+.forSUMandSUMCOUNTTwoHTML{
+    margin-left: auto;
+    position: absolute;
+    margin-right: 200px;
+    bottom: 0;
+    margin-bottom: 42px;
+    color: #f9f4e8;
+    font-family: 'Times New Roman', Times, serif ;
+    font-size: 25px;
+}
+
+.forSUMandSUMCOUNTTwoHTML2{
+    margin-left: auto;
+    position: absolute;
+    margin-right: 180px;
+    bottom: 0;
+    margin-bottom: 42px;
+    color: #f9f4e8;
+    font-family: 'Times New Roman', Times, serif ;
+    font-size: 25px;
 }

@@ -1,12 +1,26 @@
 var endSum = 0;
 var endCount = 0;
+let arr = [];
 const display =  document.getElementById("price_");
+if(localStorage.getItem('endSum') != null){
+    display.innerHTML += Number(localStorage.getItem('endSum')) + " капибарных рублей"; 
+}
+else{
+    display.innerHTML += 0 + " капибарных рублей"; 
+}
 
-function Price(numPrice, count, src, numberOfClotch){
-    let sum = Number(localStorage.getItem(src));
+function Price(numPrice, count, name, numberOfClotch){
+    let basket,res = [0,0], sum, sumCount;
+
+    if (localStorage.getItem(name) != null){
+        basket = localStorage.getItem(name);
+        res = JSON.parse(basket);
+    }
+
+    sum = Number(res[1]);
     sum += numPrice;
 
-    let sumCount = Number(localStorage.getItem(numberOfClotch));
+    sumCount = Number(res[0]);
     sumCount += count;
 
     endSum = Number(localStorage.getItem('endSum'));
@@ -18,8 +32,11 @@ function Price(numPrice, count, src, numberOfClotch){
     display.innerHTML = ''
     display.innerHTML += endSum + " капибарных рублей";  
 
-    localStorage.setItem(src, sum);
-    localStorage.setItem('endSum', endSum);
-    localStorage.setItem('endCount', endCount);
-    localStorage.setItem(numberOfClotch, sumCount);
+    arr = [];
+    arr[0] = sumCount;
+    arr[1] = sum;
+
+    localStorage.setItem(name, JSON.stringify(arr));
+    localStorage.setItem('endSum', Number(endSum));
+    localStorage.setItem('endCount', Number(endCount));
 }
