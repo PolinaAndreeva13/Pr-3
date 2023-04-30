@@ -1,12 +1,12 @@
 let keys = Object.keys(localStorage), i = 1;
 
-for (let key of keys) {
-    let basket, res = [0, 0];
-    if (key != 'endSum' && key != 'endCount') {
+for(let key of keys) {
+    let basket,res = [0,0];
+    if (key != 'endSum' && key != 'endCount'){
         let div = document.createElement("div"),
-            p1 = document.createElement("p"),
-            p2 = document.createElement("p"),
-            p3 = document.createElement("p");
+        p1 = document.createElement("p"),
+        p2 = document.createElement("p"),
+        p3 = document.createElement("p");
         div.id = `${i}`;
         basket = localStorage.getItem(key);
         res = JSON.parse(basket);
@@ -24,10 +24,10 @@ for (let key of keys) {
         div.className = "forDivTwoHTML";
         document.body.append(div);
         i++;
-    }
-    else if (key == 'endSum') {
+    }  
+    else if (key == 'endSum'){
         let div = document.createElement("div"),
-            p = document.createElement("p");
+        p = document.createElement("p");
         div.id = `${i}`;
         p.className = "forSUMandSUMCOUNTTwoHTML";
         p.innerHTML += localStorage.getItem(key) + ' × ';
@@ -36,9 +36,9 @@ for (let key of keys) {
         document.body.append(div);
         i++;
     }
-    else {
+    else{
         let div = document.createElement("div"),
-            p = document.createElement("p");
+        p = document.createElement("p");
         div.id = `${i}`;
         p.className = "forSUMandSUMCOUNTTwoHTML2";
         p.innerHTML += localStorage.getItem(key);
@@ -49,11 +49,11 @@ for (let key of keys) {
     }
 }
 
-function Clear() {
-    for (let key of keys) {
+function Clear(){
+    for(let key of keys) {
         localStorage.removeItem(key);
     }
-    for (let j = 1; ; j++) {
+    for (let j = 1;; j++){
         document.getElementById(`${j}`).innerHTML = ' ';
     }
 }
