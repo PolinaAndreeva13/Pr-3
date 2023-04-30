@@ -130,7 +130,7 @@ button:hover {
     display: flex;
     flex-direction: row;
     position: relative;
-    margin-left: 300px;
+    margin-left: 390px;
     margin-top: 30px;
     text-align: center;
 }
@@ -215,4 +215,17 @@ button:hover {
     border-radius: 8px;
     margin-top: 14px;
     margin-left: 70px;
+}
+
+table {
+    background: #f9f4e8; /* Цвет фона таблицы */
+    color: #f9f4e8; /* Цвет текста */
+    border-spacing: 2.5px; /* Расстояние между ячейками */
+    border-radius: 7px;
+}
+
+td, th {
+    background: #1f3c5c; /* Цвет фона ячеек */
+    padding: 5px; /* Поля вокруг текста */
+    text-align: center;
 }
